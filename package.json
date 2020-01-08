@@ -1,0 +1,26 @@
+{
+  "name": "slack-bot",
+  "version": "1.0.0",
+  "description": "slack-bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phillip-D-Shields/slack-bot.git"
+  },
+  "author": "phillip david shields",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phillip-D-Shields/slack-bot/issues"
+  },
+  "homepage": "https://github.com/Phillip-D-Shields/slack-bot#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "slackbots": "^1.2.0"
+  },
+  "devDependencies": {}
+}
