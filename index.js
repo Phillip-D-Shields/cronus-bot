@@ -92,30 +92,24 @@ function giveAdvice() {
 }
 
 function trumpMe() {
-axios.get('https://matchilling-tronald-dump-v1.p.rapidapi.com/random/quote', {
-  headers: {
-      "x-rapidapi-host": "matchilling-tronald-dump-v1.p.rapidapi.com",
-      "x-rapidapi-key": "38fcf7fcfamshc75632e3ce098bdp1db136jsn816d2fbc625e",
-      "accept": "application/hal+json"
-  }
-})
-.then(res => {
-  const quote = res.data.value;
-  const date = res.data.appeared_at;
-  const about = res.data.tags[0];
-  
+  axios
+    .get("https://matchilling-tronald-dump-v1.p.rapidapi.com/random/quote", {
+      headers: {
+        "x-rapidapi-host": "matchilling-tronald-dump-v1.p.rapidapi.com",
+        "x-rapidapi-key": "38fcf7fcfamshc75632e3ce098bdp1db136jsn816d2fbc625e",
+        accept: "application/hal+json"
+      }
+    })
+    .then(res => {
+      const quote = res.data.value;
+      const about = res.data.tags[0];
 
-  const params = {
-    icon_emoji: ":orange:"
-  };
+      const params = {
+        icon_emoji: ":tangerine:"
+      };
 
-  bot.postMessageToChannel("test", `:zap: ${quote}${date}${about}`, params);
-
-})
-.catch(err => {
-  console.log(err);
-
-})
+      bot.postMessageToChannel("test", `:zap: tweet wizdumb: ${quote}` , params);
+    });
 }
 
 // Show Help
@@ -130,5 +124,3 @@ function runHelp() {
     params
   );
 }
-
-

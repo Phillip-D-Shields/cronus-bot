@@ -1,26 +1,25 @@
 {
-  "name": "slack-bot",
+  "name": "cronus-bot",
   "version": "1.0.0",
-  "description": "slack-bot",
+  "description": "cronus-bot",
   "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "slackbots": "^1.2.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phillip-D-Shields/slack-bot.git"
+    "url": "git+https://github.com/Phillip-D-Shields/cronus-bot.git"
   },
-  "author": "phillip david shields",
+  "author": "phillip d shields",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Phillip-D-Shields/slack-bot/issues"
+    "url": "https://github.com/Phillip-D-Shields/cronus-bot/issues"
   },
-  "homepage": "https://github.com/Phillip-D-Shields/slack-bot#readme",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2",
-    "slackbots": "^1.2.0"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/Phillip-D-Shields/cronus-bot#readme"
 }
