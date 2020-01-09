@@ -108,7 +108,7 @@ function trumpMe() {
         icon_emoji: ":tangerine:"
       };
 
-      bot.postMessageToChannel("test", `:zap: tweet wizdumb: ${quote}` , params);
+      bot.postMessageToChannel("test", `:zap: tweet wizdumb: ${quote}`, params);
     });
 }
 
@@ -120,7 +120,7 @@ function runHelp() {
 
   bot.postMessageToChannel(
     "test",
-    `Type *@cronus* with *inspire* to get an inspiring techie quote, *joke* to get a Chuck Norris random joke and *help* to get this instruction again`,
+    `Type *@cronus* with *inspire* to get an inspiring techie quote, *joke* to get a Chuck Norris random joke, *advice* to get some rando advice, *trump* to get an insightful tweet from the US president, and *help* to get this instruction again`,
     params
   );
 }
