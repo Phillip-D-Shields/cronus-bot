@@ -4,7 +4,7 @@
   "description": "cronus-bot",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "slackbots": "^1.2.0"
   },
